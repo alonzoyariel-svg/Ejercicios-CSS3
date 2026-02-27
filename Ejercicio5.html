@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae - Alonzo Pimentel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 900px;
+            background-color: white;
+            display: flex;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* COLUMNA IZQUIERDA */
+        .sidebar {
+            width: 35%;
+            background-color: #2a5298;
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .sidebar h1 {
+            font-size: 26px;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+
+        /* COLUMNA DERECHA */
+        .main-content {
+            width: 65%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .main-content h2 {
+            color: #2a5298;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* EFECTO HOVER EN HABILIDADES */
+        .skills li {
+            transition: 0.3s;
+        }
+
+        .skills li:hover {
+            color: #2a5298;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="sidebar">
+            <div>
+                <h1>Alonzo Pimentel</h1>
+                <p>Estudiante de Informática de Software</p>
+            </div>
+
+            <div>
+                <h2>Datos Personales</h2>
+                <p>Email: alonzo@gmail.com</p>
+                <p>Teléfono: 809-000-0000</p>
+                <p>Dirección: Santo Domingo, República Dominicana</p>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <div class="main-content">
+
+            <section>
+                <h2>Formación Académica</h2>
+                <ul>
+                    <li>Estudiante de Ingeniería de Software</li>
+                    <li>Curso de Desarrollo Web HTML5 y CSS3</li>
+                    <li>Curso de Diseño y Desarrollo de Aplicaciones</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Experiencia</h2>
+                <ul>
+                    <li>Proyecto de Sistema de Biblioteca en SQL Server</li>
+                    <li>Desarrollo de páginas web estáticas y dinámica</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Habilidades</h2>
+                <ul class="skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SQL Server</li>
+                    <li>JavaScript básico</li>
+                </ul>
+            </section>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
